@@ -1,10 +1,12 @@
 # Gatsby Atomic Design Tested Starter
 
 [![Build Status](https://travis-ci.com/Scot3004/gatsby-starter-atomic-jest.svg?branch=master)](https://travis-ci.com/Scot3004/gatsby-starter-atomic-jest)
-
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3986b6a4ea8547b687417c086c629087)](https://www.codacy.com/app/Scot3004/gatsby-starter-atomic-jest?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Scot3004/gatsby-starter-atomic-jest&amp;utm_campaign=Badge_Grade)
-
 [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/3986b6a4ea8547b687417c086c629087)](https://www.codacy.com/app/Scot3004/gatsby-starter-atomic-jest?utm_source=github.com&utm_medium=referral&utm_content=Scot3004/gatsby-starter-atomic-jest&utm_campaign=Badge_Coverage)
+[![Greenkeeper badge](https://badges.greenkeeper.io/Scot3004/gatsby-starter-atomic-jest.svg)](https://greenkeeper.io/)
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Scot3004/gatsby-starter-atomic-jest)
+
 
 Gastby starter for project which need full coverage of tests
 
@@ -87,10 +89,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 -   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
 -   **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Scot3004/gatsby-starter-atomic-jest/) [![Greenkeeper badge](https://badges.greenkeeper.io/Scot3004/gatsby-starter-atomic-jest.svg)](https://greenkeeper.io/)
 
 # Create content
 All your markdown content should be located on `src/content` folder in markdown format, please note that is required to have at least 1 file on this folder instead you could get the error
