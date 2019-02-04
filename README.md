@@ -90,7 +90,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Scot3004/gatsby-starter-atomic-jest/)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Scot3004/gatsby-starter-atomic-jest/) [![Greenkeeper badge](https://badges.greenkeeper.io/Scot3004/gatsby-starter-atomic-jest.svg)](https://greenkeeper.io/)
 
 # Create content
 All your markdown content should be located on `src/content` folder in markdown format, please note that is required to have at least 1 file on this folder instead you could get the error
