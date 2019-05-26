@@ -5,27 +5,6 @@ image: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9
 ---
 # Markdown: Syntax
 
-*   [Overview](#overview)
-    *   [Philosophy](#philosophy)
-    *   [Inline HTML](#html)
-    *   [Automatic Escaping for Special Characters](#autoescape)
-*   [Block Elements](#block)
-    *   [Paragraphs and Line Breaks](#p)
-    *   [Headers](#header)
-    *   [Blockquotes](#blockquote)
-    *   [Lists](#list)
-    *   [Code Blocks](#precode)
-    *   [Horizontal Rules](#hr)
-*   [Span Elements](#span)
-    *   [Links](#link)
-    *   [Emphasis](#em)
-    *   [Code](#code)
-    *   [Images](#img)
-*   [Miscellaneous](#misc)
-    *   [Backslash Escapes](#backslash)
-    *   [Automatic Links](#autolink)
-
-
 **Note:** This document is itself written using Markdown; you
 can [see the source for it by adding '.text' to the URL](/projects/markdown/syntax.text).
 
@@ -117,7 +96,9 @@ and code blocks:
 >
 > Here's some example code:
 >
+>```bash
 >     return shell_exec("echo $input | $markdown_script");
+>```
 
 Any decent text editor should make email-style quoting easy. For
 example, with BBEdit, you can make a selection and choose Increase
@@ -229,7 +210,9 @@ to be indented *twice* -- 8 spaces or two tabs:
 
 *   A list item with a code block:
 
-        <code goes here>
+```xml
+    <code goes here>
+```
 
 ### Code Blocks
 
@@ -243,13 +226,17 @@ block by at least 4 spaces or 1 tab.
 
 This is a normal paragraph:
 
+```text
     This is a code block.
+```
 
 Here is an example of AppleScript:
 
+```applescript
     tell application "Foo"
         beep
     end tell
+```
 
 A code block continues until it reaches a line that is not indented
 (or the end of the article).
@@ -260,21 +247,21 @@ easy to include example HTML source code using Markdown -- just paste
 it and indent it, and Markdown will handle the hassle of encoding the
 ampersands and angle brackets. For example, this:
 
+```html
     <div class="footer">
         &copy; 2004 Foo Corporation
     </div>
+```
 
 Regular Markdown syntax is not processed within code blocks. E.g.,
 asterisks are just literal asterisks within a code block. This means
 it's also easy to use Markdown to write about Markdown's own syntax.
 
-<!--lint disable code-block-style-->
-```
+```applescript
 tell application "Foo"
     beep
 end tell
 ```
-<!--lint enable emphasis-marker strong-marker-->
 
 ## Span Elements
 

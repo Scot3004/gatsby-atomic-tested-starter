@@ -2,27 +2,21 @@
 
 exports[`query correctly 1`] = `
 .c0 {
-  margin: 3rem auto;
-  max-width: 1000px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: minmax(auto,1024px);
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 100%;
+  padding: 1em;
 }
 
-.c2 {
+.c1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.c3 {
   -webkit-flex: 0 0 64px;
   -ms-flex: 0 0 64px;
   flex: 0 0 64px;
@@ -31,12 +25,13 @@ exports[`query correctly 1`] = `
   padding: 10px;
 }
 
-.c1 {
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -45,27 +40,28 @@ exports[`query correctly 1`] = `
   -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 100%;
+  padding: 10px;
 }
 
-.c1:hover {
+.c2:hover {
   box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
 }
 
-.c1:last-child {
+.c2:last-child {
   margin-bottom: 0;
 }
 
-.c3 {
+.c4 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 {
+.c6 {
   margin: 0;
 }
 
-.c4 {
+.c5 {
   margin: 0 0 12px 0;
   padding: 0;
 }
@@ -73,37 +69,41 @@ exports[`query correctly 1`] = `
 <div
   className="c0"
 >
-  <header>
-    <h1>
-      Molecular starter
-    </h1>
-  </header>
   <div
     className="c1"
   >
-    <img
-      alt="My first blog post"
-      className="c2"
-      size="64px"
-      src="https://www.secorto.com/img/logo.png"
-    />
+    <header>
+      <h1>
+        Molecular starter
+      </h1>
+    </header>
     <div
-      className="c3"
+      className="c2"
     >
-      <a
-        href="/blog/my-first-post"
+      <img
+        alt="My first blog post"
+        className="c3"
+        size="64px"
+        src="https://www.secorto.com/img/logo.png"
+      />
+      <div
+        className="c4"
       >
-        <h2
-          className="c4"
+        <a
+          href="/blog/my-first-post"
         >
-          My first blog post
-        </h2>
-      </a>
-      <p
-        className="c5"
-      >
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut…
-      </p>
+          <h2
+            className="c5"
+          >
+            My first blog post
+          </h2>
+        </a>
+        <p
+          className="c6"
+        >
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut…
+        </p>
+      </div>
     </div>
   </div>
 </div>

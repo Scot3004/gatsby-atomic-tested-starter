@@ -2,81 +2,41 @@
 
 exports[`query correctly 1`] = `
 .c0 {
-  margin: 3rem auto;
-  max-width: 1000px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: minmax(auto,1024px);
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 100%;
+  padding: 1em;
 }
 
 .c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 15px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  width: 100%;
-}
-
-.c1:hover {
-  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
-}
-
-.c1:last-child {
-  margin-bottom: 0;
-}
-
-.c2 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 <div
   className="c0"
 >
-  <header>
-    <h1>
-      My first blog post
-    </h1>
-  </header>
   <div
     className="c1"
   >
+    <header>
+      <h1>
+        My first blog post
+      </h1>
+    </header>
+    <h2>
+      November 07, 2017
+    </h2>
     <div
-      className="c2"
-    >
-      <h2>
-        November 07, 2017
-      </h2>
-      <div
-        dangerouslySetInnerHTML={
-          Object {
-            "__html": "<p>\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\"</p>",
-          }
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\"</p>",
         }
-      />
-    </div>
+      }
+    />
   </div>
 </div>
 `;
