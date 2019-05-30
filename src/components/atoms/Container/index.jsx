@@ -4,9 +4,9 @@ import PropTypes from 'prop-types'
 
 const MainStyle = styled.div`
   display: grid;
-  grid-template-columns: minmax(auto, 1024px);
+  grid-template-columns: minmax(auto, 64em);
   justify-content: center;
-  padding: 1em;
+  padding: 1rem;
 `
 
 const MainContainer = styled.div`

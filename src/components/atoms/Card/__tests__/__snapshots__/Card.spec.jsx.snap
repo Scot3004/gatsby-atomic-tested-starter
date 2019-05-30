@@ -12,11 +12,11 @@ exports[`it works 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 15px;
+  margin: 0 0 1rem 0;
+  padding: .6rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 100%;
-  padding: 10px;
 }
 
 .c0:hover {
@@ -24,7 +24,7 @@ exports[`it works 1`] = `
 }
 
 .c0:last-child {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 <div

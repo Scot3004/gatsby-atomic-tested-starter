@@ -4,7 +4,7 @@ export const Avatar = styled.img`
   flex: 0 0 ${props => props.size};
   width: ${props => props.size};
   height: ${props => props.size};
-  padding: 10px;
+  padding: 1rem;
 `
 
 export default Avatar
