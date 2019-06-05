@@ -9,7 +9,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "test": "jest",
-    "lint": "",
+    "lint:styles": "stylelint 'src/**/*.jsx'",
     "lint:js": "eslint . --ext .js,.jsx",
     "lint:md": "remark .",
     "test-with-coverage": "jest --coverage && cat ./coverage/lcov.info | codacy-coverage",
@@ -47,9 +47,11 @@
     "gatsby-remark-prismjs": "^3.2.9",
     "gatsby-source-filesystem": "^2.0.22",
     "gatsby-transformer-remark": "^2.3.12",
+    "husky": ">=1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.0.0",
     "jest-styled-components": "^6.3.0",
+    "lint-staged": ">=8",
     "prettier": "^1.17.1",
     "prismjs": "^1.16.0",
     "prop-types": "^15.6.2",
@@ -73,5 +75,24 @@
     "stylelint-config-standard": "^18.2.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.5.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{css,jsx}": [
+      "stylelint --fix",
+      "git add"
+    ],
+    "*.{md,html}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
