@@ -27,6 +27,7 @@ exports[`it works 1`] = `
         title_stub
       </h1>
     </header>
+    content stub
   </div>
 </div>
 `;

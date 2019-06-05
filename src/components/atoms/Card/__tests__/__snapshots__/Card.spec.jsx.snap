@@ -13,7 +13,7 @@ exports[`it works 1`] = `
   display: -ms-flexbox;
   display: flex;
   margin: 0 0 1rem 0;
-  padding: .6rem;
+  padding: 0.6rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 100%;

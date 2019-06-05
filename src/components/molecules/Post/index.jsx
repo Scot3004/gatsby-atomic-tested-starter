@@ -1,30 +1,29 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import Avatar from '../../atoms/Avatar'
-import Card from '../../atoms/Card'
-import CardContent from '../../atoms/CardContent'
+import Avatar from '../../atoms/Avatar';
+import Card from '../../atoms/Card';
+import CardContent from '../../atoms/CardContent';
 
-export const Post = ({ image, title, frontmatter, html }) => (
+// eslint-disable react/no-danger
+export const Post = ({ image, title, frontmatter, excerpt }) => (
   <Card>
-    <Avatar src={image} alt={title} size='64px' />
+    <Avatar src={image} alt={title} size="64px" />
     <CardContent>
       <small>{frontmatter.date}</small>
-      <div
-        className='blog-post-content'
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+      <div>{excerpt}</div>
     </CardContent>
   </Card>
-)
+);
+// eslint-enable react/no-danger
 
 Post.propTypes = {
-  image: PropTypes.string,
-  title: PropTypes.string,
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   frontmatter: PropTypes.shape({
-    date: PropTypes.string
-  }),
-  html: PropTypes.string
-}
+    date: PropTypes.string.isRequired
+  }).isRequired,
+  excerpt: PropTypes.string.isRequired
+};
 
-export default Post
+export default Post;

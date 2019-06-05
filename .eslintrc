@@ -1,5 +1,10 @@
 {
-  "extends": ["standard", "standard-react"],
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "import/no-named-as-default": 0
+  },
   "env": {
     "jest": true
   }

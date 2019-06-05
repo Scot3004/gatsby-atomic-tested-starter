@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Container from '../atoms/Container'
-import { Helmet } from 'react-helmet'
-import { createGlobalStyle } from 'styled-components'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
+import { createGlobalStyle } from 'styled-components';
+import Container from '../atoms/Container';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -14,29 +14,29 @@ const GlobalStyle = createGlobalStyle`
   div {
     min-width: 0;
   }
-`
+`;
 
-export const Layout = props => (
+export const Layout = ({ title, children }) => (
   <>
     <Helmet>
-      <title>{props.title}</title>
+      <title>{title}</title>
     </Helmet>
     <GlobalStyle />
     <Container>
       <header>
-        <h1>{props.title}</h1>
+        <h1>{title}</h1>
       </header>
-      {props.children}
+      {children}
     </Container>
   </>
-)
+);
 
 Layout.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
-  ])
-}
+  ]).isRequired
+};
 
-export default Layout
+export default Layout;

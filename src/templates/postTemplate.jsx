@@ -1,26 +1,23 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Layout from '../components/layouts'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import Layout from '../components/layouts';
 
-export default function PostTemplate ({
-  data // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data // data.markdownRemark holds our post data
-  const { frontmatter, html } = markdownRemark
+export default function PostTemplate({ data }) {
+  const { markdownRemark } = data; // data.markdownRemark holds our post data
+  const { frontmatter, html } = markdownRemark;
   return (
     <Layout title={frontmatter.title}>
       <h2>{frontmatter.date}</h2>
-      <div
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+      {/* eslint-disable react/no-danger */}
+      <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
-  )
+  );
 }
 
 export const pageQuery = graphql`
-  query ($path: String!) {
-    markdownRemark(fields: {slug: {eq: $path}}) {
+  query($path: String!) {
+    markdownRemark(fields: { slug: { eq: $path } }) {
       fields {
         slug
       }
@@ -31,8 +28,8 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
 
 PostTemplate.propTypes = {
-  data: PropTypes.shape()
-}
+  data: PropTypes.shape().isRequired
+};

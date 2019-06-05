@@ -1,27 +1,26 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import PropTypes from 'prop-types'
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import PropTypes from 'prop-types';
 
-import Layout from '../components/layouts'
-import PostList from '../components/organisms/PostList'
+import Layout from '../components/layouts';
+import PostList from '../components/organisms/PostList';
 
 export const IndexPage = ({ data }) => (
   <Layout title={data.site.siteMetadata.title}>
     <PostList data={data.allMarkdownRemark.edges} />
   </Layout>
-)
+);
 
 export default props => (
   <StaticQuery
     query={graphql`
-      query
-      {
+      query {
         site {
           siteMetadata {
             title
           }
         }
-        allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
+        allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
           edges {
             node {
               id
@@ -41,7 +40,7 @@ export default props => (
     `}
     render={data => <IndexPage data={data} {...props} />}
   />
-)
+);
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
@@ -51,4 +50,4 @@ IndexPage.propTypes = {
       }).isRequired
     }).isRequired
   }).isRequired
-}
+};

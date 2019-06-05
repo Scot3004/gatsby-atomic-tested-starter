@@ -1,12 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import PostPreview from '../../molecules/PostPreview'
+import React from 'react';
+import PropTypes from 'prop-types';
+import PostPreview from '../../molecules/PostPreview';
 
 export const PostList = ({ data }) => (
   <>
-    {data.map((post, i) => (
+    {data.map(post => (
       <PostPreview
-        key={i}
+        key={post.node.fields.slug}
         title={post.node.frontmatter.title}
         image={post.node.frontmatter.image}
         excerpt={post.node.excerpt}
@@ -14,21 +14,23 @@ export const PostList = ({ data }) => (
       />
     ))}
   </>
-)
+);
 
 PostList.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.shape({
-    node: PropTypes.shape({
-      excerpt: PropTypes.string,
-      frontmatter: PropTypes.shape({
-        image: PropTypes.string,
-        title: PropTypes.string
-      }),
-      fields: PropTypes.shape({
-        slug: PropTypes.string
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      node: PropTypes.shape({
+        excerpt: PropTypes.string,
+        frontmatter: PropTypes.shape({
+          image: PropTypes.string,
+          title: PropTypes.string
+        }),
+        fields: PropTypes.shape({
+          slug: PropTypes.string
+        })
       })
     })
-  }))
-}
+  ).isRequired
+};
 
-export default PostList
+export default PostList;

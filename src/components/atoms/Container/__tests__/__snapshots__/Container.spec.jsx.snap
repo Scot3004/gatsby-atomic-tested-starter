@@ -21,6 +21,8 @@ exports[`it works 1`] = `
 >
   <div
     className="c1"
-  />
+  >
+    container stub
+  </div>
 </div>
 `;
