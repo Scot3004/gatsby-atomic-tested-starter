@@ -17,7 +17,6 @@ exports[`query correctly 1`] = `
 
 .c3 {
   min-width: 0;
-  width: 100%;
 }
 
 .c1 {

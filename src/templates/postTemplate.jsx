@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from '../components/layouts';
-import ContainerFluid from '../components/atoms/ContainerFluid';
 import PostMetadata from '../components/molecules/PostMetadata';
+import MinWidthContainer from '../components/atoms/MinWidthContainer';
 
 export default function PostTemplate({ data }) {
   const { markdownRemark } = data; // data.markdownRemark holds our post data
@@ -12,7 +12,7 @@ export default function PostTemplate({ data }) {
     <Layout title={frontmatter.title}>
       <PostMetadata frontmatter={frontmatter} timeToRead={timeToRead} />
       {/* eslint-disable react/no-danger */}
-      <ContainerFluid dangerouslySetInnerHTML={{ __html: html }} />
+      <MinWidthContainer dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   );
 }

@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { createGlobalStyle } from 'styled-components';
 import Container from '../atoms/Container';
 import MainTitle from '../atoms/MainTitle';
-import ContainerFluid from '../atoms/ContainerFluid';
+import MinWidthContainer from '../atoms/MinWidthContainer';
 import PageGrid from '../atoms/PageGrid';
 
 const GlobalStyle = createGlobalStyle`
@@ -26,7 +26,7 @@ export const Layout = ({ title, children }) => (
         <header>
           <MainTitle>{title}</MainTitle>
         </header>
-        <ContainerFluid>{children}</ContainerFluid>
+        <MinWidthContainer>{children}</MinWidthContainer>
       </PageGrid>
     </Container>
   </>
