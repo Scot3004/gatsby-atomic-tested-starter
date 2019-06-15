@@ -11,9 +11,24 @@ exports[`query correctly 1`] = `
   padding: 1rem;
 }
 
+.c2 {
+  color: #663399;
+}
+
+.c3 {
+  min-width: 0;
+  width: 100%;
+}
+
 .c1 {
   display: grid;
   grid-template-columns: 1fr;
+}
+
+.c4 {
+  color: #555;
+  margin: 0;
+  font-weight: lighter;
 }
 
 <div
@@ -23,20 +38,29 @@ exports[`query correctly 1`] = `
     className="c1"
   >
     <header>
-      <h1>
+      <h1
+        className="c2"
+      >
         My first blog post
       </h1>
     </header>
-    <h2>
-      November 07, 2017
-    </h2>
     <div
-      dangerouslySetInnerHTML={
-        Object {
-          "__html": "<p>\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\"</p>",
+      className="c3"
+    >
+      <p
+        className="c4"
+      >
+        November 07, 2017
+      </p>
+      <div
+        className="c3"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p>\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\"</p>",
+          }
         }
-      }
-    />
+      />
+    </div>
   </div>
 </div>
 `;

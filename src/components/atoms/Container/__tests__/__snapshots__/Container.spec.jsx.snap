@@ -11,18 +11,9 @@ exports[`it works 1`] = `
   padding: 1rem;
 }
 
-.c1 {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
 <div
   className="c0"
 >
-  <div
-    className="c1"
-  >
-    container stub
-  </div>
+  container stub
 </div>
 `;

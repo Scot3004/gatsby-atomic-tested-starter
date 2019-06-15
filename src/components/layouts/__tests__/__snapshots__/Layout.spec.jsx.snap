@@ -11,6 +11,15 @@ exports[`it works 1`] = `
   padding: 1rem;
 }
 
+.c2 {
+  color: #663399;
+}
+
+.c3 {
+  min-width: 0;
+  width: 100%;
+}
+
 .c1 {
   display: grid;
   grid-template-columns: 1fr;
@@ -23,11 +32,17 @@ exports[`it works 1`] = `
     className="c1"
   >
     <header>
-      <h1>
+      <h1
+        className="c2"
+      >
         title_stub
       </h1>
     </header>
-    content stub
+    <div
+      className="c3"
+    >
+      content stub
+    </div>
   </div>
 </div>
 `;

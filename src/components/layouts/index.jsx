@@ -3,16 +3,15 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { createGlobalStyle } from 'styled-components';
 import Container from '../atoms/Container';
+import MainTitle from '../atoms/MainTitle';
+import ContainerFluid from '../atoms/ContainerFluid';
+import PageGrid from '../atoms/PageGrid';
 
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
     background: #f5f5f5;
-  }
-
-  div {
-    min-width: 0;
   }
 `;
 
@@ -23,10 +22,12 @@ export const Layout = ({ title, children }) => (
     </Helmet>
     <GlobalStyle />
     <Container>
-      <header>
-        <h1>{title}</h1>
-      </header>
-      {children}
+      <PageGrid>
+        <header>
+          <MainTitle>{title}</MainTitle>
+        </header>
+        <ContainerFluid>{children}</ContainerFluid>
+      </PageGrid>
     </Container>
   </>
 );

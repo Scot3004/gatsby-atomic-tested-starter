@@ -44,6 +44,7 @@ exports[`it works 1`] = `
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
+  min-width: 0;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
