@@ -10,7 +10,7 @@ export default function PostTemplate({ data }) {
   const { frontmatter, html, timeToRead } = markdownRemark;
   return (
     <Layout title={frontmatter.title}>
-      <PostMetadata frontmatter={frontmatter} timeToRead={timeToRead} />
+      <PostMetadata date={frontmatter.date} timeToRead={timeToRead} />
       {/* eslint-disable react/no-danger */}
       <MinWidthContainer dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>

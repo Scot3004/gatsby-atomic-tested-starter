@@ -6,12 +6,12 @@ import MetadataElement from '../../atoms/MetadataElement';
 import MetadataText from '../../atoms/MetadataText';
 import MetadataContainer from '../../atoms/MetadataContainer';
 
-export const PostMetadata = ({ frontmatter, timeToRead }) => (
+export const PostMetadata = ({ date, timeToRead }) => (
   <IconContext.Provider value={{ style: { color: '#663399' } }}>
     <MetadataContainer>
       <MetadataElement>
         <FaCalendarAlt />
-        <MetadataText>{frontmatter.date}</MetadataText>
+        <MetadataText>{date}</MetadataText>
       </MetadataElement>
       <MetadataElement>
         <FaUserClock />
@@ -22,7 +22,7 @@ export const PostMetadata = ({ frontmatter, timeToRead }) => (
 );
 
 PostMetadata.propTypes = {
-  frontmatter: PropTypes.shape().isRequired,
+  date: PropTypes.string.isRequired,
   timeToRead: PropTypes.string.isRequired
 };
 
