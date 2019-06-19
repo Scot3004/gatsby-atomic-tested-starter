@@ -37,11 +37,11 @@ exports[`it works 1`] = `
         title_stub
       </h1>
     </header>
-    <div
+    <main
       className="c3"
     >
       content stub
-    </div>
+    </main>
   </div>
 </div>
 `;

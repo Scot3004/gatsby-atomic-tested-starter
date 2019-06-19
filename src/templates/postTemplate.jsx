@@ -1,19 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import Layout from '../components/layouts';
+import BoxedLayout from '../components/layouts/BoxedLayout';
 import PostMetadata from '../components/molecules/PostMetadata';
-import MinWidthContainer from '../components/atoms/MinWidthContainer';
 
 export default function PostTemplate({ data }) {
   const { markdownRemark } = data; // data.markdownRemark holds our post data
   const { frontmatter, html, timeToRead } = markdownRemark;
   return (
-    <Layout title={frontmatter.title}>
+    <BoxedLayout title={frontmatter.title}>
       <PostMetadata date={frontmatter.date} timeToRead={timeToRead} />
       {/* eslint-disable react/no-danger */}
-      <MinWidthContainer dangerouslySetInnerHTML={{ __html: html }} />
-    </Layout>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
+    </BoxedLayout>
   );
 }
 

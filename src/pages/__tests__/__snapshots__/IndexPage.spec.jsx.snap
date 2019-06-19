@@ -96,7 +96,7 @@ exports[`query correctly 1`] = `
           Molecular starter
         </h1>
       </header>
-      <div
+      <main
         className="c3"
       >
         <div
@@ -127,7 +127,7 @@ exports[`query correctly 1`] = `
             </p>
           </div>
         </div>
-      </div>
+      </main>
     </div>
   </div>
 </div>

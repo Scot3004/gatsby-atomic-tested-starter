@@ -2,13 +2,13 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 
-import Layout from '../components/layouts';
+import BoxedLayout from '../components/layouts/BoxedLayout';
 import PostList from '../components/organisms/PostList';
 
 export const IndexPage = ({ data }) => (
-  <Layout title={data.site.siteMetadata.title}>
+  <BoxedLayout title={data.site.siteMetadata.title}>
     <PostList data={data.allMarkdownRemark.edges} />
-  </Layout>
+  </BoxedLayout>
 );
 
 export default props => (

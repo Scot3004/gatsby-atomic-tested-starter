@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { createGlobalStyle } from 'styled-components';
-import Container from '../atoms/Container';
-import MainTitle from '../atoms/MainTitle';
-import MinWidthContainer from '../atoms/MinWidthContainer';
-import PageGrid from '../atoms/PageGrid';
+import Container from '../../atoms/Container';
+import MainTitle from '../../atoms/MainTitle';
+import MainContainer from '../../atoms/MainContainer';
+import PageGrid from '../../atoms/PageGrid';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const Layout = ({ title, children }) => (
+export const BoxedLayout = ({ title, children }) => (
   <>
     <Helmet>
       <title>{title}</title>
@@ -26,13 +26,13 @@ export const Layout = ({ title, children }) => (
         <header>
           <MainTitle>{title}</MainTitle>
         </header>
-        <MinWidthContainer>{children}</MinWidthContainer>
+        <MainContainer>{children}</MainContainer>
       </PageGrid>
     </Container>
   </>
 );
 
-Layout.propTypes = {
+BoxedLayout.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
@@ -40,4 +40,4 @@ Layout.propTypes = {
   ]).isRequired
 };
 
-export default Layout;
+export default BoxedLayout;
