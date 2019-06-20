@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
 import Avatar from '../../atoms/Avatar';
-import Card from '../../atoms/Card';
+import LinkCard from '../../atoms/LinkCard';
 import CardContent from '../../atoms/CardContent';
 import Excerpt from '../../atoms/Excerpt';
 import Title from '../../atoms/Title';
 
 export const PostPreview = ({ image, title, slug, excerpt }) => (
-  <Card>
+  <LinkCard>
     <Avatar src={image} alt={title} size="64px" />
     <CardContent>
       <Link to={slug}>
@@ -17,7 +17,7 @@ export const PostPreview = ({ image, title, slug, excerpt }) => (
       </Link>
       <Excerpt>{excerpt}</Excerpt>
     </CardContent>
-  </Card>
+  </LinkCard>
 );
 
 PostPreview.propTypes = {

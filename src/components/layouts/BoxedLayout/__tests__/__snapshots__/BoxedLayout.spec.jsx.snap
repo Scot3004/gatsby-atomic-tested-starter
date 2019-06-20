@@ -15,7 +15,7 @@ exports[`it works 1`] = `
   color: #663399;
 }
 
-.c5 {
+.c4 {
   min-width: 0;
 }
 
@@ -29,6 +29,7 @@ exports[`it works 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-radius: 0.5rem;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   box-sizing: border-box;
   display: -webkit-box;
@@ -40,27 +41,11 @@ exports[`it works 1`] = `
   -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 100%;
-}
-
-.c3:hover {
-  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
+  padding: 0;
 }
 
 .c3:last-child {
   margin: 0;
-}
-
-.c4 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  min-width: 0;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
 }
 
 <div
@@ -78,13 +63,9 @@ exports[`it works 1`] = `
     </header>
     <div
       className="c3"
-    >
-      <div
-        className="c4"
-      />
-    </div>
+    />
     <main
-      className="c5"
+      className="c4"
     >
       content stub
     </main>

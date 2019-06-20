@@ -6,6 +6,7 @@ exports[`it works 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-radius: 0.5rem;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   box-sizing: border-box;
   display: -webkit-box;
@@ -17,10 +18,7 @@ exports[`it works 1`] = `
   -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 100%;
-}
-
-.c0:hover {
-  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
+  padding: 0;
 }
 
 .c0:last-child {
@@ -28,41 +26,63 @@ exports[`it works 1`] = `
 }
 
 .c1 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  min-width: 0;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: black;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.5rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
-.c2 {
+.c1:hover {
   color: #663399;
+}
+
+.c1:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  margin: -$border;
+  border-radius: inherit;
+  background: linear-gradient(to right,red,orange);
 }
 
 <div
   className="c0"
 >
-  <div
+  <a
     className="c1"
+    href="link_stub"
   >
-    <a
-      href="link_stub"
-    >
-      <span
-        className="c2"
-        dangerouslySetInnerHTML={
-          Object {
-            "__html": "<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" class=\\"feather feather-calendar\\"><rect x=\\"3\\" y=\\"4\\" width=\\"18\\" height=\\"18\\" rx=\\"2\\" ry=\\"2\\"></rect><line x1=\\"16\\" y1=\\"2\\" x2=\\"16\\" y2=\\"6\\"></line><line x1=\\"8\\" y1=\\"2\\" x2=\\"8\\" y2=\\"6\\"></line><line x1=\\"3\\" y1=\\"10\\" x2=\\"21\\" y2=\\"10\\"></line></svg>",
-          }
+    <span
+      className=""
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" class=\\"feather feather-calendar\\"><rect x=\\"3\\" y=\\"4\\" width=\\"18\\" height=\\"18\\" rx=\\"2\\" ry=\\"2\\"></rect><line x1=\\"16\\" y1=\\"2\\" x2=\\"16\\" y2=\\"6\\"></line><line x1=\\"8\\" y1=\\"2\\" x2=\\"8\\" y2=\\"6\\"></line><line x1=\\"3\\" y1=\\"10\\" x2=\\"21\\" y2=\\"10\\"></line></svg>",
         }
-      />
-      name stub
-    </a>
-  </div>
+      }
+    />
+    name stub
+  </a>
 </div>
 `;

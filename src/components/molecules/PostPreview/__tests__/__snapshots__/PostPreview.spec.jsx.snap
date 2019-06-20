@@ -15,6 +15,7 @@ exports[`it works 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-radius: 0.5rem;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   box-sizing: border-box;
   display: -webkit-box;
@@ -28,12 +29,12 @@ exports[`it works 1`] = `
   width: 100%;
 }
 
-.c0:hover {
-  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
-}
-
 .c0:last-child {
   margin: 0;
+}
+
+.c0:hover {
+  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
 }
 
 .c2 {

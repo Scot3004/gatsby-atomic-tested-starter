@@ -1,21 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
-import Card from '../../atoms/Card';
-import CardContent from '../../atoms/CardContent';
+import NavigationCard from '../../atoms/NavigationCard';
 import FeatherIcon from '../../molecules/FeatherIcon';
+import NavigationLink from '../../atoms/NavigationLink';
 
 export const Navigation = ({ menuLinks }) => (
-  <Card>
-    <CardContent>
-      {menuLinks.map(link => (
-        <Link to={link.link} key={link.name}>
-          <FeatherIcon name={link.icon} />
-          {link.name}
-        </Link>
-      ))}
-    </CardContent>
-  </Card>
+  <NavigationCard>
+    {menuLinks.map(link => (
+      <NavigationLink to={link.link} key={link.name}>
+        <FeatherIcon name={link.icon} />
+        {link.name}
+      </NavigationLink>
+    ))}
+  </NavigationCard>
 );
 
 Navigation.propTypes = {

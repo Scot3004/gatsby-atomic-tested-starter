@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     background: #f5f5f5;
+    overflow-y: scroll;
   }
 `;
 
