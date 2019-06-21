@@ -5,12 +5,14 @@ module.exports = {
       {
         name: 'home',
         link: '/',
-        icon: 'home'
+        icon: 'home',
+        partiallyActive: false
       },
       {
         name: 'blog',
         link: '/blog',
-        icon: 'message-square'
+        icon: 'message-square',
+        partiallyActive: true
       }
     ]
   },

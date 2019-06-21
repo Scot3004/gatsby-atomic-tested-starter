@@ -52,7 +52,8 @@ exports[`it works 1`] = `
   text-decoration: none;
 }
 
-.c1:hover {
+.c1:hover,
+.c1.active {
   color: #663399;
 }
 
@@ -71,6 +72,7 @@ exports[`it works 1`] = `
   className="c0"
 >
   <a
+    activeClassName="active"
     className="c1"
     href="link_stub"
   >

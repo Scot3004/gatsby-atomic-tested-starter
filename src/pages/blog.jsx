@@ -13,6 +13,7 @@ export const pageQuery = graphql`
           name
           link
           icon
+          partiallyActive
         }
       }
     }

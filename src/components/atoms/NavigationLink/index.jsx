@@ -12,7 +12,8 @@ const NavigationLink = styled(Link)`
   padding: 0.5rem;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &.active {
     color: #663399;
   }
 

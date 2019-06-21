@@ -7,7 +7,12 @@ import NavigationLink from '../../atoms/NavigationLink';
 export const Navigation = ({ menuLinks }) => (
   <NavigationCard>
     {menuLinks.map(link => (
-      <NavigationLink to={link.link} key={link.name}>
+      <NavigationLink
+        to={link.link}
+        key={link.name}
+        activeClassName="active"
+        partiallyActive={link.partiallyActive}
+      >
         <FeatherIcon name={link.icon} />
         {link.name}
       </NavigationLink>
