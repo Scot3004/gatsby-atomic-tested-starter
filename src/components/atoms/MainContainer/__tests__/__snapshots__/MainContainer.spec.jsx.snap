@@ -2,6 +2,7 @@
 
 exports[`When I visit the site Then I can see a wrapper without scrolls 1`] = `
 .c0 {
+  grid-area: main;
   min-width: 0;
 }
 

@@ -24,14 +24,15 @@ exports[`When I open a page with boxed layout Then the page should be wrapped by
     <GlobalStyleComponent />
     <ForwardRef>
       <ForwardRef>
-        <header>
-          <ForwardRef>
-            title_stub
-          </ForwardRef>
-        </header>
         <Navigation
           menuLinks={Array []}
         />
+        <ForwardRef>
+          <Profile
+            avatar="img_stub"
+            name="title_stub"
+          />
+        </ForwardRef>
         <ForwardRef>
           content stub
         </ForwardRef>

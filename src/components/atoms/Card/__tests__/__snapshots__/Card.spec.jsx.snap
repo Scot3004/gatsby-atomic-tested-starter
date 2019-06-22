@@ -20,10 +20,6 @@ exports[`When I want to see a card element Then the card should have borders and
   width: 100%;
 }
 
-.c0:last-child {
-  margin: 0;
-}
-
 <div
   className="c0"
 />

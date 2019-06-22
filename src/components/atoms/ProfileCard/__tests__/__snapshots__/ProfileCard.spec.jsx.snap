@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`When I want to see the navigation elements Then they should not have space from the parent 1`] = `
+exports[`When I visit the site Then the profile of the blog owner should be shown 1`] = `
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -18,9 +18,20 @@ exports[`When I want to see the navigation elements Then they should not have sp
   -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 100%;
-  grid-area: 'navigation';
-  padding: 0;
-  height: 60px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+@media only screen and (min-width:48em) {
+  .c0 {
+    height: 95vh;
+    margin: 0;
+  }
 }
 
 <div

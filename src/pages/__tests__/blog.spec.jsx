@@ -7,6 +7,7 @@ import BlogPage from '../blog';
 const data = {
   site: {
     siteMetadata: {
+      logo: 'img_stub',
       title: 'Molecular starter',
       menuLinks: []
     }

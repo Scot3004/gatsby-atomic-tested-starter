@@ -9,6 +9,7 @@ export const IndexPage = ({ data }) => (
   <BoxedLayout
     title={data.site.siteMetadata.title}
     menuLinks={data.site.siteMetadata.menuLinks}
+    avatar={data.site.siteMetadata.logo}
   >
     <PostList data={data.allMarkdownRemark.edges} />
   </BoxedLayout>
@@ -19,6 +20,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        logo
         menuLinks {
           name
           link

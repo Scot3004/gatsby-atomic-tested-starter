@@ -6,7 +6,7 @@ import BoxedLayout from '..';
 describe('When I open a page with boxed layout', () => {
   const renderer = new ShallowRenderer();
   renderer.render(
-    <BoxedLayout title="title_stub" menuLinks={[]}>
+    <BoxedLayout title="title_stub" menuLinks={[]} avatar="img_stub">
       content stub
     </BoxedLayout>
   );

@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Molecular starter',
+    logo: '/gatsby.svg',
     menuLinks: [
       {
         name: 'home',

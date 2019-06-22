@@ -2,7 +2,10 @@
 
 exports[`When I visit the site Then the site should have a general title 1`] = `
 .c0 {
+  font-size: 1.5rem;
+  margin: 0.6rem;
   color: #663399;
+  text-align: center;
 }
 
 <h1

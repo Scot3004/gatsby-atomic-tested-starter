@@ -7,6 +7,7 @@ import IndexPageWithQuery from '..';
 const data = {
   site: {
     siteMetadata: {
+      logo: 'img_stub',
       title: 'Molecular starter',
       menuLinks: []
     }

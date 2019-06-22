@@ -9,6 +9,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        logo
         menuLinks {
           name
           link

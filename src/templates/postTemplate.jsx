@@ -13,6 +13,7 @@ export default function PostTemplate({ data }) {
     <BoxedLayout
       title={data.site.siteMetadata.title}
       menuLinks={data.site.siteMetadata.menuLinks}
+      avatar={data.site.siteMetadata.logo}
     >
       <Card>
         <CardContent>
@@ -30,6 +31,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        logo
         menuLinks {
           name
           link

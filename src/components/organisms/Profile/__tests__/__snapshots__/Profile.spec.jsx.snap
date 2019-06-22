@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`When I visit the site Then the profile of the blog owner should be shown 1`] = `
+<ForwardRef>
+  <ForwardRef
+    alt="sergio"
+    size="96px"
+    src="img_stub"
+  />
+  <ForwardRef>
+    sergio
+  </ForwardRef>
+</ForwardRef>
+`;

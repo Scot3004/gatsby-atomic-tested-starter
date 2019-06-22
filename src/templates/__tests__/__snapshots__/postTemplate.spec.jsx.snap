@@ -2,6 +2,7 @@
 
 exports[`When I want to see one blog post Then the post should be displayed 1`] = `
 <BoxedLayout
+  avatar="img_stub"
   menuLinks={Array []}
   title="Molecular starter"
 >

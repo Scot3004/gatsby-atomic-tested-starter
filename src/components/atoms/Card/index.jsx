@@ -10,10 +10,6 @@ export const Card = styled.div`
   padding: 0.6rem;
   transition: 0.3s;
   width: 100%;
-
-  &:last-child {
-    margin: 0;
-  }
 `;
 
 export default Card;

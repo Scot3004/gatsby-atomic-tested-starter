@@ -7,7 +7,7 @@ exports[`When an avatar is displayed Then it will be rendered in the given size 
   flex: 0 0 64px;
   width: 64px;
   height: 64px;
-  padding: 1rem;
+  padding: 0.6rem;
 }
 
 <img
