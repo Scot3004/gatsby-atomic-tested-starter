@@ -30,7 +30,6 @@ exports[`it works 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: black;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -50,11 +49,6 @@ exports[`it works 1`] = `
   padding: 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
-}
-
-.c1:hover,
-.c1.active {
-  color: #663399;
 }
 
 .c1:before {

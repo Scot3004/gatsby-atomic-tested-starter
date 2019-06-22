@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 const NavigationLink = styled(Link)`
   align-items: center;
-  color: black;
+  color: ${props => props.theme.textColor};
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -12,9 +12,16 @@ const NavigationLink = styled(Link)`
   padding: 0.5rem;
   text-decoration: none;
 
-  &:hover,
+  &:visited {
+    color: ${props => props.theme.textColor};
+  }
+
   &.active {
-    color: #663399;
+    color: ${props => props.theme.visitedColor};
+  }
+
+  &:hover {
+    color: ${props => props.theme.primaryColor};
   }
 
   &:before {

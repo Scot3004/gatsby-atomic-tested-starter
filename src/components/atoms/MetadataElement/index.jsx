@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MetadataElement = styled.div`
-  color: #555;
+  color: ${props => props.theme.mutedColor};
   display: inline-block;
   margin: 0;
 `;
