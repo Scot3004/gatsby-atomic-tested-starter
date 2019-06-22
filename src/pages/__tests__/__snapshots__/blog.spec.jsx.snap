@@ -1,160 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`query correctly 1`] = `
-.c0 {
-  display: grid;
-  grid-template-columns: minmax(auto,64em);
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.c2 {
-  color: #663399;
-}
-
-.c4 {
-  min-width: 0;
-}
-
-.c1 {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.c3 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 0 1rem 0;
-  padding: 0.6rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  width: 100%;
-  padding: 0;
-}
-
-.c3:last-child {
-  margin: 0;
-}
-
-.c6 {
-  -webkit-flex: 0 0 64px;
-  -ms-flex: 0 0 64px;
-  flex: 0 0 64px;
-  width: 64px;
-  height: 64px;
-  padding: 1rem;
-}
-
-.c5 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 0 1rem 0;
-  padding: 0.6rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  width: 100%;
-}
-
-.c5:last-child {
-  margin: 0;
-}
-
-.c5:hover {
-  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
-}
-
-.c7 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  min-width: 0;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-}
-
-.c9 {
-  margin: 0;
-}
-
-.c8 {
-  margin: 0 0 0.6rem 0;
-  padding: 0;
-  word-wrap: none;
-}
-
-<div
-  className="c0"
+exports[`When I want to see the blog posts Then the page should be rendered 1`] = `
+<BoxedLayout
+  menuLinks={Array []}
+  title="Molecular starter"
 >
-  <div
-    className="c1"
-  >
-    <header>
-      <h1
-        className="c2"
-      >
-        Molecular starter
-      </h1>
-    </header>
-    <div
-      className="c3"
-    />
-    <main
-      className="c4"
-    >
-      <div
-        className="c5"
-      >
-        <img
-          alt="My first blog post"
-          className="c6"
-          size="64px"
-          src="https://www.secorto.com/img/logo.png"
-        />
-        <div
-          className="c7"
-        >
-          <a
-            href="/blog/my-first-post"
-          >
-            <h2
-              className="c8"
-            >
-              My first blog post
-            </h2>
-          </a>
-          <p
-            className="c9"
-          >
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut…
-          </p>
-        </div>
-      </div>
-    </main>
-  </div>
-</div>
+  <PostList
+    data={
+      Array [
+        Object {
+          "node": Object {
+            "excerpt": "\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut…",
+            "fields": Object {
+              "slug": "/blog/my-first-post",
+            },
+            "frontmatter": Object {
+              "date": "November 07, 2017",
+              "image": "https://www.secorto.com/img/logo.png",
+              "title": "My first blog post",
+            },
+            "id": "39cb6d6b-1bf3-5aa1-a310-b882314db77b",
+          },
+        },
+      ]
+    }
+  />
+</BoxedLayout>
 `;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`it works 1`] = `
+exports[`When I want to see a list of posts Then i can see the excerpt without margins 1`] = `
 .c0 {
   margin: 0;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import 'jest-styled-components';
-import renderer from 'react-test-renderer';
+import ShallowRenderer from 'react-test-renderer/shallow';
 import PostList from '..';
 
 const stub = [
@@ -21,7 +21,11 @@ const stub = [
   }
 ];
 
-test('it works', () => {
-  const tree = renderer.create(<PostList data={stub} />).toJSON();
-  expect(tree).toMatchSnapshot();
+describe('When I want to see the list of posts', () => {
+  const renderer = new ShallowRenderer();
+  renderer.render(<PostList data={stub} />);
+  test('Then the list of posts should be displayed', () => {
+    const tree = renderer.getRenderOutput();
+    expect(tree).toMatchSnapshot();
+  });
 });

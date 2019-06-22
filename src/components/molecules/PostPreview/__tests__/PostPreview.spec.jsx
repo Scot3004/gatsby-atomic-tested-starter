@@ -1,16 +1,21 @@
 import React from 'react';
 import 'jest-styled-components';
-import renderer from 'react-test-renderer';
+import ShallowRenderer from 'react-test-renderer/shallow';
 import PostPreview from '..';
 
-const stub = {
-  title: 'Title stub',
-  excerpt: 'Excerpt stub',
-  image: 'image_stub',
-  slug: 'slug_stub'
-};
+describe('When I want to see the preview of one blog post', () => {
+  const renderer = new ShallowRenderer();
+  renderer.render(
+    <PostPreview
+      title="Title stub"
+      excerpt="Excerpt stub"
+      image="image_stub"
+      slug="slug_stub"
+    />
+  );
 
-test('it works', () => {
-  const tree = renderer.create(<PostPreview {...stub} />).toJSON();
-  expect(tree).toMatchSnapshot();
+  test('Then I should be able to see the title and description', () => {
+    const tree = renderer.getRenderOutput();
+    expect(tree).toMatchSnapshot();
+  });
 });

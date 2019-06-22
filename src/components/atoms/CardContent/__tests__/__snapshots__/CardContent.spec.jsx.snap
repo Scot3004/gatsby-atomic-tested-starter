@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`it works 1`] = `
+exports[`When I want to see a card element Then the content should not exceed the card dimensions 1`] = `
 .c0 {
   -webkit-flex: 1;
   -ms-flex: 1;

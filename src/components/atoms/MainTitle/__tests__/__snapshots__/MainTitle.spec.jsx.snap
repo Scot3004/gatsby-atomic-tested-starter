@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`When I visit the site Then the site should have a general title 1`] = `
+.c0 {
+  color: #663399;
+}
+
+<h1
+  className="c0"
+/>
+`;

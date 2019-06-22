@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`When I want to see the metadata of a post Then the metadata should be displayed 1`] = `
+<ForwardRef>
+  <ForwardRef>
+    <FeatherIcon
+      name="calendar"
+      size={16}
+    />
+    <ForwardRef>
+      2019-06-22
+    </ForwardRef>
+  </ForwardRef>
+  <ForwardRef>
+    <FeatherIcon
+      name="clock"
+      size={16}
+    />
+    <ForwardRef>
+      3
+       minutes to read
+    </ForwardRef>
+  </ForwardRef>
+</ForwardRef>
+`;

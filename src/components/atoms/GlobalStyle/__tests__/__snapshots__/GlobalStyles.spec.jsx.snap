@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`When I visit the site Then the global styles should be added to the site 1`] = `null`;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`it works 1`] = `
+exports[`When I want to see a card element Then the card should have borders and a good spacing 1`] = `
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;

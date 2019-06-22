@@ -1,198 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`query correctly 1`] = `
-.c0 {
-  display: grid;
-  grid-template-columns: minmax(auto,64em);
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.c2 {
-  color: #663399;
-}
-
-.c4 {
-  min-width: 0;
-}
-
-.c1 {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.c5 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 0 1rem 0;
-  padding: 0.6rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  width: 100%;
-}
-
-.c5:last-child {
-  margin: 0;
-}
-
-.c3 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 0 1rem 0;
-  padding: 0.6rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  width: 100%;
-  padding: 0;
-}
-
-.c3:last-child {
-  margin: 0;
-}
-
-.c8 {
-  color: #555;
-  display: inline-block;
-  margin: 0;
-}
-
-.c9 {
-  margin: 0 1rem 0 0.2rem;
-  font-weight: lighter;
-}
-
-.c7 {
-  margin: 0 -1rem 0 0;
-}
-
-.c6 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  min-width: 0;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-}
-
-<div
-  className="c0"
+exports[`When I want to see one blog post Then the post should be displayed 1`] = `
+<BoxedLayout
+  menuLinks={Array []}
+  title="Molecular starter"
 >
-  <div
-    className="c1"
-  >
-    <header>
-      <h1
-        className="c2"
-      >
-        Molecular starter
-      </h1>
-    </header>
-    <div
-      className="c3"
-    />
-    <main
-      className="c4"
-    >
+  <ForwardRef>
+    <ForwardRef>
+      <PostMetadata
+        date="November 07, 2017"
+        timeToRead="3"
+      />
       <div
-        className="c5"
-      >
-        <div
-          className="c6"
-        >
-          <div
-            className="c7"
-          >
-            <div
-              className="c8"
-            >
-              <svg
-                fill="currentColor"
-                height="1em"
-                stroke="currentColor"
-                strokeWidth="0"
-                style={
-                  Object {
-                    "color": "#663399",
-                  }
-                }
-                viewBox="0 0 448 512"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"
-                />
-              </svg>
-              <span
-                className="c9"
-              >
-                November 07, 2017
-              </span>
-            </div>
-            <div
-              className="c8"
-            >
-              <svg
-                fill="currentColor"
-                height="1em"
-                stroke="currentColor"
-                strokeWidth="0"
-                style={
-                  Object {
-                    "color": "#663399",
-                  }
-                }
-                viewBox="0 0 640 512"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M496 224c-79.6 0-144 64.4-144 144s64.4 144 144 144 144-64.4 144-144-64.4-144-144-144zm64 150.3c0 5.3-4.4 9.7-9.7 9.7h-60.6c-5.3 0-9.7-4.4-9.7-9.7v-76.6c0-5.3 4.4-9.7 9.7-9.7h12.6c5.3 0 9.7 4.4 9.7 9.7V352h38.3c5.3 0 9.7 4.4 9.7 9.7v12.6zM320 368c0-27.8 6.7-54.1 18.2-77.5-8-1.5-16.2-2.5-24.6-2.5h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h347.1c-45.3-31.9-75.1-84.5-75.1-144zm-96-112c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128z"
-                />
-              </svg>
-              <span
-                className="c9"
-              >
-                3
-                 minutes to read
-              </span>
-            </div>
-          </div>
-          <div
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "<p>\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\"</p>",
-              }
-            }
-          />
-        </div>
-      </div>
-    </main>
-  </div>
-</div>
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p>\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\"</p>",
+          }
+        }
+      />
+    </ForwardRef>
+  </ForwardRef>
+</BoxedLayout>
 `;

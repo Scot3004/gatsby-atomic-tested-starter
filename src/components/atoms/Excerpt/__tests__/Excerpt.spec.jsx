@@ -3,7 +3,9 @@ import 'jest-styled-components';
 import renderer from 'react-test-renderer';
 import Excerpt from '..';
 
-test('it works', () => {
+describe('When I want to see a list of posts', () => {
   const tree = renderer.create(<Excerpt />).toJSON();
-  expect(tree).toMatchSnapshot();
+  test('Then i can see the excerpt without margins', () => {
+    expect(tree).toMatchSnapshot();
+  });
 });

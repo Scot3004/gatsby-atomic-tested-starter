@@ -1,91 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`it works 1`] = `
-.c1 {
-  -webkit-flex: 0 0 64px;
-  -ms-flex: 0 0 64px;
-  flex: 0 0 64px;
-  width: 64px;
-  height: 64px;
-  padding: 1rem;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 0 1rem 0;
-  padding: 0.6rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  width: 100%;
-}
-
-.c0:last-child {
-  margin: 0;
-}
-
-.c0:hover {
-  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
-}
-
-.c2 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  min-width: 0;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-}
-
-.c4 {
-  margin: 0;
-}
-
-.c3 {
-  margin: 0 0 0.6rem 0;
-  padding: 0;
-  word-wrap: none;
-}
-
-<div
-  className="c0"
->
-  <img
+exports[`When I want to see the preview of one blog post Then I should be able to see the title and description 1`] = `
+<ForwardRef>
+  <ForwardRef
     alt="Title stub"
-    className="c1"
     size="64px"
     src="image_stub"
   />
-  <div
-    className="c2"
-  >
-    <a
-      href="slug_stub"
+  <ForwardRef>
+    <mockConstructor
+      to="slug_stub"
     >
-      <h2
-        className="c3"
-      >
+      <ForwardRef>
         Title stub
-      </h2>
-    </a>
-    <p
-      className="c4"
-    >
+      </ForwardRef>
+    </mockConstructor>
+    <ForwardRef>
       Excerpt stub
-    </p>
-  </div>
-</div>
+    </ForwardRef>
+  </ForwardRef>
+</ForwardRef>
 `;

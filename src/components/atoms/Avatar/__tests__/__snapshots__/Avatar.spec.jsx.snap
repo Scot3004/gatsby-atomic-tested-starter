@@ -1,20 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`it works 1`] = `
-.c0 {
-  -webkit-flex: 0 0;
-  -ms-flex: 0 0;
-  flex: 0 0;
-  padding: 1rem;
-}
-
-<img
-  className="c0"
-  src="src_stub"
-/>
-`;
-
-exports[`it works 64px 1`] = `
+exports[`When an avatar is displayed Then it will be rendered in the given size 1`] = `
 .c0 {
   -webkit-flex: 0 0 64px;
   -ms-flex: 0 0 64px;

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import BoxedLayout from '../components/layouts/BoxedLayout';
-import PostMetadata from '../components/molecules/PostMetadata';
+import PostMetadata from '../components/organisms/PostMetadata';
 import CardContent from '../components/atoms/CardContent';
 import Card from '../components/atoms/Card';
 

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`it works 1`] = `
+exports[`When I want to see a list of posts Then the title should be highlighted 1`] = `
 .c0 {
   margin: 0 0 0.6rem 0;
   padding: 0;

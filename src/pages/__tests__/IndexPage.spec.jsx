@@ -1,7 +1,7 @@
 import React from 'react';
 import 'jest-styled-components';
 import { graphql, StaticQuery } from 'gatsby';
-import renderer from 'react-test-renderer';
+import ShallowRenderer from 'react-test-renderer/shallow';
 import IndexPageWithQuery from '..';
 
 const data = {
@@ -31,12 +31,20 @@ const data = {
     ]
   }
 };
-test('query correctly', () => {
+
+describe('When I want to see the home page', () => {
+  const renderer = new ShallowRenderer();
   StaticQuery.mockImplementation(({ render }) => {
     return <div>{render(data)}</div>;
   });
-  const tree = renderer.create(<IndexPageWithQuery />).toJSON();
-  expect(StaticQuery).toBeCalled();
-  expect(graphql).toBeCalled();
-  expect(tree).toMatchSnapshot();
+  renderer.render(<IndexPageWithQuery data={data} />);
+
+  test('Then the posts should be fetched', () => {
+    expect(graphql).toBeCalled();
+  });
+
+  test('Then the page should be rendered', () => {
+    const tree = renderer.getRenderOutput();
+    expect(tree).toMatchSnapshot();
+  });
 });

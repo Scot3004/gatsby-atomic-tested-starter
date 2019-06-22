@@ -3,7 +3,9 @@ import 'jest-styled-components';
 import renderer from 'react-test-renderer';
 import Title from '..';
 
-test('it works', () => {
+describe('When I want to see a list of posts', () => {
   const tree = renderer.create(<Title />).toJSON();
-  expect(tree).toMatchSnapshot();
+  test('Then the title should be highlighted', () => {
+    expect(tree).toMatchSnapshot();
+  });
 });

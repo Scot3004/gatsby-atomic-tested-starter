@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`When I see the navigation links Then they should look neutral if the page is not the current page 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.5rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:visited {
+  color: #000;
+}
+
+.c0.active {
+  color: #402060;
+}
+
+.c0:hover {
+  color: #663399;
+}
+
+.c0:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  margin: -$border;
+  border-radius: inherit;
+  background: linear-gradient(to right,red,orange);
+}
+
+<a
+  className="c0"
+  theme={
+    Object {
+      "backgroundColor": "#f5f5f5",
+      "mutedColor": "#555",
+      "primaryColor": "#663399",
+      "textColor": "#000",
+      "visitedColor": "#402060",
+    }
+  }
+/>
+`;

@@ -1,7 +1,7 @@
 import React from 'react';
 import 'jest-styled-components';
 import { graphql } from 'gatsby';
-import renderer from 'react-test-renderer';
+import ShallowRenderer from 'react-test-renderer/shallow';
 import PostTemplate from '../postTemplate';
 
 const data = {
@@ -25,8 +25,16 @@ const data = {
   }
 };
 
-test('query correctly', () => {
-  const tree = renderer.create(<PostTemplate data={data} />).toJSON();
-  expect(graphql).toBeCalled();
-  expect(tree).toMatchSnapshot();
+describe('When I want to see one blog post', () => {
+  const renderer = new ShallowRenderer();
+  renderer.render(<PostTemplate data={data} />);
+
+  test('Then the post should be fetched', () => {
+    expect(graphql).toBeCalled();
+  });
+
+  test('Then the post should be displayed', () => {
+    const tree = renderer.getRenderOutput();
+    expect(tree).toMatchSnapshot();
+  });
 });

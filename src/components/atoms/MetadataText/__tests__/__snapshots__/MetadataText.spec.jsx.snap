@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`When I see the metadata of a post Then the text should be lighther 1`] = `
+.c0 {
+  margin: 0 1rem 0 0.2rem;
+  font-weight: lighter;
+}
+
+<span
+  className="c0"
+/>
+`;

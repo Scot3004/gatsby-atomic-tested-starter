@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`it works 1`] = `
+exports[`When I open a page with content inside a container Then the content should be displayed with a width of up to 64em 1`] = `
 .c0 {
   display: grid;
   grid-template-columns: minmax(auto,64em);
